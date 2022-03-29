@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,9 @@
     "csv-parse": "^5.0.4",
     "express": "^4.17.3",
     "jest": "^27.5.1",
+    "mongoose": "^6.2.9",
     "nodemon": "^2.0.15",
+    "pm2": "^5.2.0",
     "supertest": "^6.2.2"
   }
 }
